@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/footbg02"
+    android:gravity="center_vertical" >
+    <ImageButton
+        android:id="@+id/footer_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/change_taxi_button"
+        android:layout_alignParentLeft="true" 
+        android:layout_marginLeft="35dp"/>
+    <ImageButton
+        android:id="@+id/footer_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/icon_share" 
+        android:layout_toRightOf="@id/footer_one"
+        android:layout_marginLeft="50dp"/>
+    <ImageButton
+        android:id="@+id/footer_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/icon_listmodel"
+        android:layout_alignParentRight="true" 
+        android:layout_marginRight="45dp"/>
+</RelativeLayout>

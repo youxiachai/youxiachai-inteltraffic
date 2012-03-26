@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/layout_main"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:background="#ffffff" >
+    <LinearLayout android:layout_width="0px"
+        android:layout_height="0px" android:focusable="true"
+        android:focusableInTouchMode="true" />
+    <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_marginBottom="50dp"
+         android:orientation="vertical" >
+        <include layout="@layout/bus_result_header" ></include>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+             android:layout_marginTop="12dp" android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp">
+             <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true" android:background="@drawable/kbg01"
+                     android:id="@+id/start_layout">
+                     <TextView android:layout_width="wrap_content" android:layout_alignParentLeft="true"
+                             android:layout_height="wrap_content" android:text="出发:"
+                             android:textSize="16sp" android:textColor="#000000"
+                             android:layout_marginLeft="10dp" android:id="@+id/text01"
+                             android:layout_marginTop="3dp"/>
+                     <TextView android:layout_width="wrap_content" android:id="@+id/text02"
+                             android:layout_height="wrap_content" android:text="广州"
+                             android:textSize="18sp" android:textColor="#000000"
+                             android:layout_marginLeft="5dp" android:layout_toRightOf="@id/text01"
+                             android:layout_marginTop="2dp"/> 
+                     <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:layout_marginLeft="10dp" android:layout_marginTop="6dp"
+                             android:layout_below="@id/text01" android:layout_alignParentLeft="true"
+                             android:id="@+id/time_from">
+                             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                     android:textColor="#0080AB" android:textSize="18sp" 
+                                     android:text="08:30" android:textStyle="bold"
+                                     android:id="@+id/start_time"/>
+                             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                     android:textColor="#000000" android:textSize="15sp"
+                                     android:text="广州客运站" android:layout_marginRight="1dp"
+                                     android:layout_toRightOf="@id/start_time" android:id="@+id/start_city"
+                                     android:layout_marginLeft="10dp"/>                       
+                     </RelativeLayout>
+                     <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:layout_marginLeft="10dp" android:layout_marginTop="1dp"
+                             android:layout_below="@id/time_from" android:layout_alignParentLeft="true"
+                             android:layout_marginBottom="5dp">
+                             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                     android:textColor="#858585" android:textSize="12sp" 
+                                     android:text="2012-02-12" android:id="@+id/start_date"/>
+                             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                     android:textColor="#858585" android:textSize="13sp"
+                                     android:text="星期四" android:layout_marginLeft="10dp"
+                                     android:layout_toRightOf="@id/start_date" android:id="@+id/start_week"/>                       
+                     </RelativeLayout>t
+             </RelativeLayout>
+             <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true" android:background="@drawable/kbg01"
+                     android:id="@+id/end_layout" android:layout_toRightOf="@id/start_layout"
+                     android:layout_marginLeft="5dp">
+                      <TextView android:layout_width="wrap_content" android:layout_alignParentLeft="true"
+                             android:layout_height="wrap_content" android:text="到达:"
+                             android:textSize="16sp" android:textColor="#000000"
+                             android:layout_marginLeft="10dp" android:id="@+id/text03"
+                             android:layout_marginTop="3dp"/>
+                     <TextView android:layout_width="wrap_content" android:id="@+id/text04"
+                             android:layout_height="wrap_content" android:text="深圳"
+                             android:textSize="18sp" android:textColor="#000000"
+                             android:layout_marginLeft="5dp" android:layout_toRightOf="@id/text03"
+                             android:layout_marginTop="2dp"/> 
+                     <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:layout_marginLeft="10dp" android:layout_marginTop="6dp"
+                             android:layout_below="@id/text03" android:layout_alignParentLeft="true"
+                             android:id="@+id/time_to">
+                             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                     android:textColor="#0080AB" android:textSize="18sp" 
+                                     android:text="08:30" android:textStyle="bold"
+                                     android:id="@+id/start_time"/>
+                             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                     android:textColor="#000000" android:textSize="15sp"
+                                     android:text="深圳国际机场" android:layout_marginRight="1dp"
+                                     android:layout_toRightOf="@id/start_time" android:id="@+id/end_city"
+                                     android:layout_marginLeft="10dp"/>                       
+                     </RelativeLayout>
+                     <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:layout_marginLeft="10dp" android:layout_marginTop="1dp"
+                             android:layout_below="@id/time_to" android:layout_alignParentLeft="true"
+                             android:layout_marginBottom="5dp">
+                             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                     android:textColor="#858585" android:textSize="12sp" 
+                                     android:text="2012-02-12" android:id="@+id/start_date"/>
+                             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                     android:textColor="#858585" android:textSize="13sp"
+                                     android:text="星期四" android:layout_marginLeft="10dp"
+                                     android:layout_toRightOf="@id/start_date" android:id="@+id/start_week"/>                       
+                     </RelativeLayout>          
+             </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/statr_city_layout"
+                      android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                      android:layout_marginTop="15dp" android:background="@drawable/up_select">
+                      <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/icon_18" android:layout_centerVertical="true"
+                              android:id="@+id/start_city_img"/>
+                      <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/start_city_img"
+                              android:layout_marginLeft="8dp" android:text="成人票:"
+                              android:textColor="#707070" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                      <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01" android:layout_centerVertical="true"
+                              android:id="@+id/arrow02"/>
+                      <TextView android:layout_width="wrap_content" android:id="@+id/start_city"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow02"
+                              android:layout_marginRight="5dp" android:text="15张"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+               </RelativeLayout>
+               <RelativeLayout android:id="@+id/end_city_layout"
+                     android:layout_width="fill_parent" android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                     android:background="@drawable/center_select">
+                     <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/icon_18" android:layout_centerVertical="true"
+                              android:id="@+id/end_city_img"/>
+                     <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/end_city_img"
+                              android:layout_marginLeft="8dp" android:text="儿童票:"
+                              android:textColor="#707070" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                     <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01"
+                              android:id="@+id/arrow03" android:layout_centerVertical="true"/>
+                     <TextView android:layout_width="wrap_content" android:id="@+id/end_city"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow03"
+                              android:layout_marginRight="5dp" android:text="15张"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+              </RelativeLayout>
+              <RelativeLayout android:id="@+id/data_layout"
+                   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                   android:layout_marginBottom="10dp" android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp" android:background="@drawable/down_select">
+                   <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                          android:background="@drawable/icon_19" android:layout_centerVertical="true"
+                          android:id="@+id/date_img"/> 
+                   <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:layout_toRightOf="@id/date_img" android:layout_centerVertical="true">
+                         <TextView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content" android:id="@+id/mobile"
+                               android:layout_marginLeft="8dp" android:text="手机号:"
+                               android:textColor="#707070" android:textSize="18dp" />
+                        <TextView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="8dp" android:text="(接收凭证):"
+                               android:textColor="#098AB7" android:textSize="12dp" 
+                               android:layout_below="@id/mobile"/>
+                   </RelativeLayout>    
+                   <ImageView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                          android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                          android:background="@drawable/arrow01" 
+                          android:id="@+id/arrow05" android:layout_centerVertical="true"/>
+                   <TextView android:layout_width="wrap_content" android:id="@+id/mobile_value"
+                          android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow05"
+                          android:layout_marginRight="5dp" android:text="15812783751"
+                          android:textColor="#000000" android:textSize="16dp" 
+                          android:layout_centerVertical="true"/>
+             </RelativeLayout>
+             <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_below="@id/data_layout"
+                    android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" >       
+                    <Button android:id="@+id/QueryOk"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:background="@drawable/bus_query_button" android:text="确认"
+                        android:textColor="#ffffff" android:textSize="18sp"
+                        android:layout_centerVertical="true"/>
+             </RelativeLayout>   
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content" 
+    android:background="@drawable/horm_list_effect">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:background="@drawable/pic_cbg" android:layout_marginLeft="15dp" 
+        android:id="@+id/list_logo_layout" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/list_logo"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_centerInParent="true" android:background="@drawable/pic_c"/>
+    </RelativeLayout> 
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_toRightOf="@id/list_logo_layout"
+        android:layout_centerVertical="true" android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp" android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+        <TextView android:id="@+id/preferential_price"
+             android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:textColor="#0097CD" android:text="118元"
+             android:textSize="20sp" android:textStyle="bold"/>
+        <TextView  android:id="@+id/original_cost"  android:layout_width="wrap_content"
+             android:layout_height="wrap_content" android:textColor="#B0B0B0"
+             android:textSize="16sp"  android:layout_toRightOf="@id/preferential_price"
+             android:layout_marginLeft="8dp" android:text="￥203元"
+             android:layout_alignBottom="@id/preferential_price"/>   
+        <TextView android:id="@+id/grade" android:layout_width="wrap_content"
+             android:layout_height="wrap_content" android:layout_below="@id/preferential_price"
+             android:layout_alignLeft="@id/preferential_price"
+             android:text="评分：" android:textSize="16sp"/> 
+        <ImageView android:id="@+id/star" android:layout_width="wrap_content"
+             android:layout_height="wrap_content" android:layout_toRightOf="@id/grade"
+             android:layout_below="@id/preferential_price" android:layout_marginLeft="5dp"
+             android:background="@drawable/star04" android:layout_marginTop="3dp"/> 
+        <TextView android:id="@+id/brief" android:layout_width="wrap_content" 
+             android:layout_height="wrap_content" android:layout_below="@id/grade"
+             android:layout_alignLeft="@id/grade" android:textColor="#3E3E3E"
+             android:textSize="18sp" android:text="洗车洗车洗车洗车洗车"
+             android:layout_marginRight="5dp"/>     
+    </RelativeLayout>
+</RelativeLayout>

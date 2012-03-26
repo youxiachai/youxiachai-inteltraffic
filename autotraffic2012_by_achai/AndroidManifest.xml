@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dracode.autotraffic"
+    android:versionCode="18"
+    android:versionName="1.18.beta(Build12032310)" >
+    <uses-sdk android:minSdkVersion="7" />
+
+    <!-- 申请权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!-- 操作sdcard权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /><!-- 精细定位授权 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /><!-- 粗略定位授权   -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    
+    <application  android:name=".main.MyApp"
+        android:icon="@drawable/icon" android:label="@string/app_name" 
+        android:theme="@android:style/Theme.NoTitleBar">
+        <!-- activity注册 -->
+        <activity android:name=".main.WelcomeActivity"
+            android:label="@string/app_name" android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MyTheme.NoTitleBar.CustomBackground">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".main.MainActivity"  android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name="com.dracode.andrdce.ctact.CvtActivity"></activity>
+        <activity android:name="com.dracode.andrdce.ctact.CvActivity"></activity>
+        <activity android:name="com.dracode.andrdce.ctact.TraceLogActivity" android:configChanges="orientation|keyboardHidden"></activity>
+        <!-- 公交 -->
+        <activity android:name=".bus.busline.BusLineQueryActivity"  android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name=".bus.busline.BusLineResultActivity" android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name=".bus.busstation.BusStationQueryActivity" android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name=".bus.busstation.BusStationResultActivity" android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name=".bus.buschange.BusChangeQueryActivity" android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name=".bus.buschange.BusChangeResultActivity" android:configChanges="orientation|keyboardHidden"></activity>
+        <!-- 附近 -->
+        <activity android:name=".nearby.NearbyQueryActivity"  android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name=".common.map.PoiListActivity"  android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name=".common.map.PoiMapActivity"  android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name=".common.map.OldPoiMapActivity"  android:configChanges="orientation|keyboardHidden"></activity>
+        <!-- 路线-->
+        <activity android:name=".route.BusRouteQueryActivity"  android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name=".route.MetroRouteQueryActivity"  android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name=".route.drive.DriveQueryActivity"  android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name=".route.drive.DriveResultActivity"  android:configChanges="orientation|keyboardHidden"></activity>
+        <!-- 服务 -->
+        <activity android:name=".serves.ServiceIndexActivity" android:configChanges="orientation|keyboardHidden"></activity>
+        <!-- 切换城市 -->
+        <activity android:name=".common.switchcity.SwitchCityActivity" android:configChanges="orientation|keyboardHidden"></activity>
+        <!-- 地图 -->
+        <activity android:name=".common.map.SelectMapPointActivity" android:configChanges="orientation|keyboardHidden"></activity>
+        
+        <!-- 我的 -->
+        <activity android:name=".my.LoginActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".my.FindPasswordActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".my.MyIndexActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".my.RegisterActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".my.MyMessageActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".my.MyOrderListActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".my.MyCollectionListActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".my.HelpActivity" android:configChanges="orientation|keyboardHidden"/>
+        
+        <!-- 路况 -->
+        <activity android:name=".roadcodition.RoadCoditionMapActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".roadcodition.RoadHighSpeedPromptActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".roadcodition.RoadHighSpeedActivity" android:configChanges="orientation"/>
+        <activity android:name=".common.vedio.PlayVedioActivity" android:configChanges="orientation|keyboardHidden"/>
+        
+        <!-- 服务 -->
+        <activity android:name=".serves.icarcar.IcarCarIndexActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".serves.icarcar.MyCarActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".serves.icarcar.IcarGoodsListActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".serves.icarcar.IcarGoodsDetailActivity" android:configChanges="orientation|keyboardHidden"/>
+        
+        <activity android:name=".serves.taxicall.TaxiCallMapIndex" android:configChanges="orientation|keyboardHidden"/>
+        
+        <activity android:name=".common.webview.ShowWebView" android:configChanges="orientation|keyboardHidden"/>
+        
+        <!-- 火车 -->
+        <activity android:name=".serves.train.stationstation.TrainQueryActivity" android:configChanges="orientation|keyboardHidden"/>
+        <!-- 机场快线 -->
+        <activity android:name=".serves.airportexpress.PlaneFastLineQueryActivity" android:configChanges="orientation|keyboardHidden"/>
+        <!-- 地铁 -->
+        <activity android:name=".serves.metro.MetroChangeQueryActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".serves.metro.MetroLineQueryActivity" android:configChanges="orientation|keyboardHidden"/>
+        <!-- 交警专栏 -->
+          <activity android:name=".serves.trafficpolice.TrafficPoliceQueryActivty" android:configChanges="orientation|keyboardHidden"/>
+        <!-- 客车查询 -->
+        <activity android:name=".serves.passenger.PassengerCarQueryActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".serves.passenger.PassengerCarResultListActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".serves.passenger.PassengerCarMyOrderActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".serves.passenger.PayoffTicketActivity" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".serves.passenger.PredetermineTicketActivity" android:configChanges="orientation|keyboardHidden"/>
+    </application>
+    
+</manifest>

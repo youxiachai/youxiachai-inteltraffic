@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:orientation="vertical"
+    android:layout_height="fill_parent" >
+    <com.mapabc.mapapi.MapView
+         android:id="@+id/mapView"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:apiKey="@string/maps_api_key"
+         android:clickable="true" />
+    <ImageButton android:id="@+id/layer"
+         android:layout_width="wrap_content" android:layout_height="wrap_content"
+         android:layout_gravity="top|right" android:layout_marginRight="10dp"
+         android:layout_marginTop="32dp" android:background="@android:color/transparent"
+         android:src="@drawable/icon_layer" android:visibility="gone"/>
+    <ImageButton android:id="@+id/show_area"
+         android:layout_width="wrap_content" android:layout_height="wrap_content"
+         android:layout_gravity="bottom|right" android:layout_marginBottom="10dp"
+         android:src="@drawable/outlayericon"
+         android:background="@android:color/transparent" android:visibility="gone"/>
+</FrameLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent" android:layout_height="fill_parent"
+     android:id="@+id/layout_main" android:background="#ffffff">
+<!--      <LinearLayout android:focusable="true" android:layout_width="0px" 
+          android:layout_height="0px" android:focusableInTouchMode="true"/>  -->
+     <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" 
+              android:orientation="vertical" android:layout_marginBottom="50dp">
+        <include layout="@layout/passenger_car_result_header"></include>
+
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:background="@drawable/center01bg">
+                 <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" android:layout_marginLeft="10dp"
+                        android:layout_alignParentLeft="true" android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" android:id="@+id/layout_01">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="车次" android:textColor="#000000"
+                                android:textSize="16sp" android:id="@+id/car_num"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="车型" android:textColor="#000000"
+                                android:textSize="16sp" android:id="@+id/car_type"
+                                android:layout_below="@id/car_num" android:layout_marginTop="1dp"/>
+                 </RelativeLayout>
+                 <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/layout_01" android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" android:id="@+id/layout_02">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="出发站" android:textColor="#000000"
+                                android:textSize="16sp" android:id="@+id/start_station"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="到达站" android:textColor="#000000"
+                                android:textSize="16sp" android:id="@+id/end_station"
+                                android:layout_below="@id/start_station" android:layout_marginTop="1dp"/>
+                 </RelativeLayout>
+                 <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/layout_02" android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" android:id="@+id/layout_03">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="出发时间" android:textColor="#000000"
+                                android:textSize="16sp" android:id="@+id/start_time"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="到达时间" android:textColor="#000000"
+                                android:textSize="16sp" android:id="@+id/end_time"
+                                android:layout_below="@id/start_time" android:layout_marginTop="1dp"/>
+                 </RelativeLayout>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="票价" android:textColor="#000000"
+                                android:textSize="16sp" android:id="@+id/ticket_price"
+                                android:layout_marginLeft="20dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/layout_03"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="余票" android:textColor="#000000"
+                                android:textSize="16sp" android:id="@+id/ticket_count"
+                                android:layout_marginLeft="15dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/ticket_price"/>
+        </RelativeLayout> 
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:layout_gravity="center" android:id="@+id/no_data_layout"
+                 android:visibility="gone" >
+            <TextView android:id="@+id/no_data"
+                 android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp" android:layout_marginTop="10dp"
+                 android:text="查询不到相关数据!" android:textColor="#000000"
+                 android:textSize="18sp"/> 
+        </RelativeLayout>      
+        <ListView android:id="@+id/list_contents" android:layout_width="fill_parent"
+               android:layout_height="wrap_content" android:focusableInTouchMode="true"
+               android:fadingEdge="vertical" android:divider="@drawable/line"
+               android:dividerHeight="0.5dp" android:cacheColorHint="#00000000"
+               android:scrollingCache="false" android:background="#FFFFFF"
+               android:fastScrollEnabled="true">
+        </ListView>
+     </LinearLayout>
+    <include layout="@layout/passenger_car_result_footer"/>
+</RelativeLayout>

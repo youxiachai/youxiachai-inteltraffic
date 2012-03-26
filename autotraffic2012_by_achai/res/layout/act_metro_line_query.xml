@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical" >
+
+        <include layout="@layout/bus_result_header" ></include>
+        <include layout="@layout/metro_query_switch" ></include>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"                
+                android:id="@+id/relayout0"
+                android:layout_marginTop="20dp">                    
+                <RelativeLayout
+                    android:id="@+id/relative_01"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/searchbg" >
+
+                    <EditText
+                        android:id="@+id/start_input"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="请输入线路(如 :609路)"
+                        android:paddingLeft="5dp" 
+                        android:textSize="18sp"
+                        android:textColorHint="#C0C0C0"/>
+
+                    <ImageButton
+                        android:id="@+id/del_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/icon_del" 
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <ImageButton 
+                    android:id="@+id/bus_celection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/collection_button"/>              
+            </RelativeLayout>
+             <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relayout0"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp" >       
+                    <Button
+                        android:id="@+id/QueryOk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bus_query_button"
+                        android:text="查询"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"/>
+         </RelativeLayout>   
+         </RelativeLayout>         
+    </LinearLayout>
+</RelativeLayout>

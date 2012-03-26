@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutPopup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tip_pointer_button"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/line_planning_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/line_planning_button"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/division01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/taxi_locatebg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutPoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" >
+
+        <TextView
+            android:id="@+id/PoiName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Name"
+            android:textColor="#ff000000"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/poiAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#ff464646"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/division02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/taxi_locatebg"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/dial_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/taxi_map_overlay_dial_button"
+        android:visibility="gone" />
+
+</LinearLayout>

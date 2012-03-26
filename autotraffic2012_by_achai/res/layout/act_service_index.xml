@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#ffffff" >
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:orientation="vertical" >
+        <include layout="@layout/header"></include>
+      <!--   <RelativeLayout android:layout_width="fill_parent" android:layout_height="90dp"
+                 android:background="@drawable/adpic">
+             <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:background="@drawable/switchpicbg" android:layout_alignParentBottom="true">
+                 <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:background="@drawable/dot_blue" android:layout_centerHorizontal="true"
+                        android:id="@+id/three"/>
+                 <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:background="@drawable/dot_blue" android:layout_centerHorizontal="true"
+                        android:id="@+id/two" android:layout_toLeftOf="@id/three"/>
+                 <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:background="@drawable/dot_blue" android:layout_centerHorizontal="true"
+                        android:id="@+id/one" android:layout_toLeftOf="@id/two"/>
+                 <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:background="@drawable/dot_blue" android:layout_centerHorizontal="true"
+                        android:id="@+id/four" android:layout_toRightOf="@id/three"/>
+                 <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:background="@drawable/dot_blue" android:layout_centerHorizontal="true"
+                        android:id="@+id/five" android:layout_toRightOf="@id/four"/>      
+             </RelativeLayout>
+        </RelativeLayout> -->
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <GridView android:id="@+id/menu_list"
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:paddingLeft="5dp" android:paddingRight="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:horizontalSpacing="8dp"  android:listSelector="@drawable/goout_menu_button"
+                android:numColumns="3" android:scrollbars="none"
+                android:verticalSpacing="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

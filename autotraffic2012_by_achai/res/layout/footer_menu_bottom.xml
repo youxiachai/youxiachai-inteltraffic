@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:layout_alignParentBottom="true"     
+	android:gravity="center">
+    <LinearLayout
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:gravity="bottom|center" android:background="@drawable/footerbg"
+        android:layout_gravity="bottom" android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/footer_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/footer_menu_01" />
+        <ImageButton
+            android:id="@+id/footer_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/footer_menu_02"/>
+        <ImageButton
+            android:id="@+id/footer_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/footer_menu_03"/>
+         <ImageButton
+            android:id="@+id/footer_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/footer_menu_06"
+            android:visibility="gone"/>
+        <ImageButton
+            android:id="@+id/footer_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/footer_menu_04"/>
+        <ImageButton
+            android:id="@+id/footer_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/footer_menu_05" />
+    </LinearLayout>
+</RelativeLayout>

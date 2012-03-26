@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#ffffff" >
+    <LinearLayout android:layout_width="0px"
+        android:layout_height="0px" android:focusable="true"
+        android:focusableInTouchMode="true" />
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:layout_marginBottom="50dp"
+        android:orientation="vertical" >
+        <include layout="@layout/bus_result_header" ></include>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:orientation="vertical" >
+                 <RelativeLayout android:id="@+id/statr_city_layout"
+                      android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                      android:layout_marginTop="15dp" android:background="@drawable/up_select">
+                      <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/icon_16" android:layout_centerVertical="true"
+                              android:id="@+id/start_city_img"/>
+                      <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/start_city_img"
+                              android:layout_marginLeft="8dp" android:text="出发"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                      <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01" android:layout_centerVertical="true"
+                              android:id="@+id/arrow02"/>
+                      <TextView android:layout_width="wrap_content" android:id="@+id/start_city"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow02"
+                              android:layout_marginRight="10dp" android:text="广州"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+               </RelativeLayout>
+               <RelativeLayout android:id="@+id/end_city_layout"
+                     android:layout_width="fill_parent" android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                     android:background="@drawable/center_select">
+                     <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/icon_15" android:layout_centerVertical="true"
+                              android:id="@+id/end_city_img"/>
+                     <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/end_city_img"
+                              android:layout_marginLeft="8dp" android:text="到达"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                     <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01"
+                              android:id="@+id/arrow03" android:layout_centerVertical="true"/>
+                     <TextView android:layout_width="wrap_content" android:id="@+id/end_city"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow03"
+                              android:layout_marginRight="10dp" android:text="珠海"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+              </RelativeLayout>
+              <RelativeLayout android:id="@+id/data_layout"
+                   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                   android:layout_marginBottom="10dp" android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp" android:background="@drawable/down_select">
+                   <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                          android:background="@drawable/icon_17" android:layout_centerVertical="true"
+                          android:id="@+id/date_img"/>     
+                   <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_toRightOf="@id/date_img"
+                          android:layout_marginLeft="8dp" android:text="日期"
+                          android:textColor="#000000" android:textSize="18dp" 
+                          android:layout_centerVertical="true"/>
+                   <ImageView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                          android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                          android:background="@drawable/arrow01" 
+                          android:id="@+id/arrow05" android:layout_centerVertical="true"/>
+                   <TextView android:layout_width="wrap_content" android:id="@+id/date"
+                          android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow05"
+                          android:layout_marginRight="10dp" android:text="2012-02-28 星期三"
+                          android:textColor="#000000" android:textSize="18dp" 
+                          android:layout_centerVertical="true"/>
+             </RelativeLayout>
+             <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_below="@id/data_layout"
+                    android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" >       
+                    <Button android:id="@+id/QueryOk"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:background="@drawable/bus_query_button" android:text="查询"
+                        android:textColor="#ffffff" android:textSize="18sp"
+                        android:layout_centerVertical="true"/>
+             </RelativeLayout>   
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

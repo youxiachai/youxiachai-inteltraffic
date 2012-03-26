@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent" android:layout_height="fill_parent"
+     android:id="@+id/layout_main" android:background="#ffffff">
+<!--      <LinearLayout android:focusable="true" android:layout_width="0px" 
+          android:layout_height="0px" android:focusableInTouchMode="true"/>  -->
+     <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="fill_parent" android:orientation="vertical">
+          <include layout="@layout/goods_header" ></include>
+
+          <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:layout_gravity="center" android:id="@+id/no_data_layout"
+                 android:visibility="gone" >
+            <TextView android:id="@+id/no_data"
+                 android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp" android:layout_marginTop="10dp"
+                 android:text="查询不到相关数据!" android:textColor="#000000"
+                 android:textSize="18sp"/> 
+          </RelativeLayout>
+          <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:background="@drawable/center01bg">
+                 <TextView android:id="@+id/icar_type" android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+                         android:layout_centerVertical="true" android:textColor="#000000"
+                         android:textSize="19sp" android:textStyle="bold" 
+                         android:layout_marginLeft="10dp" android:text="爱车：别克-君威"/>
+                 <TextView android:id="@+id/select_other_icar" android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                         android:layout_marginRight="8dp" android:layout_centerVertical="true"
+                         android:textColor="#0097CD" android:textSize="18sp"
+                         android:text="选择其他车型"/>
+         </RelativeLayout> 
+         <ListView android:id="@+id/list_contents" android:layout_width="fill_parent"
+               android:layout_height="wrap_content" android:focusableInTouchMode="true"
+               android:fadingEdge="vertical" android:divider="@drawable/line"
+               android:dividerHeight="0.5dp" android:cacheColorHint="#00000000"
+               android:scrollingCache="false" android:background="#FFFFFF"
+               android:fastScrollEnabled="true">
+         </ListView>
+     </LinearLayout>
+</RelativeLayout>

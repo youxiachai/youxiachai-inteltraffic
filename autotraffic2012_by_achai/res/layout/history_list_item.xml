@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/list_item_layout" android:layout_width="fill_parent"
+          android:layout_height="wrap_content" android:background="@drawable/horm_list_effect">
+         <ImageView android:id="@+id/arrow" android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                    android:background="@drawable/arrow01" android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"/>   
+         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:id="@+id/textView_HistoryItemMemo" android:layout_toLeftOf="@id/arrow"
+                   android:layout_centerVertical="true" android:layout_marginRight="3dp"
+                   android:textSize="18sp"/>           
+         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="" android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp" android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp" android:textSize="18sp"
+                    android:textColor="#818283" android:layout_centerVertical="true"
+                    android:id="@+id/textView_HistoryItemName" android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/textView_HistoryItemMemo"/>                                                                                        
+</RelativeLayout>

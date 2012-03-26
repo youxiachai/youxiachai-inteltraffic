@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:orientation="vertical"
+    android:layout_height="fill_parent" >
+    <com.mapabc.mapapi.MapView
+         android:id="@+id/mapView"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:apiKey="@string/maps_api_key"
+         android:clickable="true" />
+    <ImageButton android:id="@+id/layer"
+         android:layout_width="wrap_content" android:layout_height="wrap_content"
+         android:layout_gravity="top|right" android:layout_marginRight="10dp"
+         android:layout_marginTop="32dp" android:background="@android:color/transparent"
+         android:src="@drawable/icon_layer" android:visibility="gone"/>
+     <RelativeLayout android:layout_width="fill_parent" android:layout_height="112dp"
+         android:layout_gravity="bottom">
+     <SlidingDrawer android:id="@+id/slidingdrawer"
+             android:layout_width="wrap_content"  android:layout_height="wrap_content" 
+             android:orientation="horizontal" android:handle="@+id/show_area" 
+             android:content="@+id/content" android:layout_gravity="bottom"
+             android:animateOnClick ="true">    
+             <ImageButton android:id="@+id/show_area"
+                   android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/outlayericon" 
+                   android:background="@android:color/transparent"/>  
+             <LinearLayout android:id="@+id/content" android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content" android:layout_gravity="center">   
+                   <GridView android:id="@+id/gridview" android:layout_width="wrap_content"
+                        android:layout_height="110dp" android:numColumns="3"
+                        android:verticalSpacing="2dip" android:horizontalSpacing="5dip"
+                        android:stretchMode="columnWidth" android:gravity="center"
+                        android:background="@drawable/bg_popup"/>
+             </LinearLayout>                    
+      </SlidingDrawer>  
+    </RelativeLayout>
+</FrameLayout>

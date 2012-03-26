@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent" android:layout_height="fill_parent"
+     android:id="@+id/layout_main" android:background="#ffffff">
+<!--      <LinearLayout android:focusable="true" android:layout_width="0px" 
+          android:layout_height="0px" android:focusableInTouchMode="true"/>  -->
+     <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+          android:scrollbars="none" android:layout_marginBottom="45dp">
+     <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="fill_parent" android:orientation="vertical">
+          <include layout="@layout/header" ></include>
+          <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:layout_gravity="center" android:id="@+id/no_data_layout"
+                 android:visibility="gone" >
+            <TextView android:id="@+id/no_data"
+                 android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp" android:layout_marginTop="10dp"
+                 android:text="查询不到相关数据!" android:textColor="#000000"
+                 android:textSize="18sp"/> 
+          </RelativeLayout>
+          <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp">
+                 <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_centerInParent="true" android:background="@drawable/pic_bbg">
+                      <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:background="@drawable/pic_b" android:layout_centerInParent="true"/>
+                 </RelativeLayout>     
+                 <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_alignParentRight="true" android:layout_marginTop="100dp"
+                      android:background="@drawable/arrow02">   
+                 </ImageButton>
+          </RelativeLayout> 
+          <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:background="@drawable/buybg" android:layout_marginRight="15dp">
+                 <TextView android:id="@+id/preferential_price"
+                       android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:textColor="#0097CD" android:text="￥118元"
+                       android:textSize="25sp" android:textStyle="bold"
+                       android:layout_marginLeft="40dp" android:layout_centerVertical="true"/>
+                 <TextView  android:id="@+id/original_cost"  android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" android:textColor="#B0B0B0"
+                       android:textSize="16sp"  android:layout_toRightOf="@id/preferential_price"
+                       android:layout_marginLeft="3dp" android:text="￥203元"
+                       android:layout_centerVertical="true"/> 
+                 <Button android:id="@+id/buy_bt" android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                       android:layout_marginRight="10dp" android:layout_centerVertical="true"
+                       android:background="@drawable/buy_button"/>
+          </RelativeLayout>
+          <TextView android:id="@+id/favourable_info" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:layout_marginTop="15dp"
+                  android:layout_gravity="center_horizontal" android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp" android:text="【梅华东洗车】仅售109元!价值287元洗车套餐,心动不如行动!"
+                  android:textSize="20sp" android:textColor="#000000"/>
+          <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp" android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp">
+                 <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_centerVertical="true" android:background="@drawable/pic02bg"
+                          android:layout_alignParentLeft="true">
+                          <TextView android:id="@+id/buy_count" android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content" android:text="629人已购买"
+                                  android:layout_centerInParent="true" android:paddingLeft="18dp"
+                                  android:textColor="#000000" android:textSize="17sp"/>
+                 </RelativeLayout>
+                 <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_alignParentRight="true" android:layout_centerVertical="true"
+                          android:background="@drawable/pic03"/>
+          </RelativeLayout>
+          <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp" android:layout_marginLeft="15dp"
+                 android:layout_marginRight="15dp" android:background="@drawable/roundbg02"
+                 android:layout_marginBottom="10dp">
+                 <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:background="@drawable/arrow01" android:layout_alignParentRight="true"
+                         android:layout_marginRight="15dp" android:layout_centerVertical="true"/>
+                 <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:layout_centerInParent="true">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                 android:layout_centerVertical="true" android:background="@drawable/pic_i"
+                                 android:id="@+id/detali_img"/>
+                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                 android:text="查看详情" android:textColor="#3E3E3E"
+                                 android:textSize="20sp" android:layout_centerVertical="true"
+                                 android:layout_toRightOf="@id/detali_img" android:layout_marginLeft="8dp"/>
+                 </RelativeLayout>
+          </RelativeLayout>
+     </LinearLayout>
+     </ScrollView>
+     <include layout="@layout/service_second_footer"></include> 
+</RelativeLayout>

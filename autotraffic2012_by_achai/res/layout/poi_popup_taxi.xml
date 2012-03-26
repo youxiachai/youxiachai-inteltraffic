@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@+id/LinearLayoutPopup"
+    android:background="@drawable/taxi_detailbg"
+	android:focusable="true" android:clickable="true" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"><!--
+	<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:background="@drawable/taxi_map_overlay_backl_button" android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp" android:id="@+id/back_bt"/>
+    -->
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" android:textStyle="bold"
+            android:layout_marginLeft="5dp" android:id="@+id/distance"
+            android:textSize="18sp" android:textColor="#0085C9"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:background="@drawable/taxi_locatebg" android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp" android:id="@+id/division01"/>        
+    <LinearLayout android:layout_gravity="center_vertical"
+		android:orientation="vertical" android:id="@+id/LinearLayoutPoi"
+		android:paddingLeft="5.0dip" android:paddingRight="5.0dip"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<TextView android:textSize="20sp" android:textColor="#ff000000"
+			android:id="@+id/PoiName" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Name"
+			android:singleLine="true" android:textStyle="bold"/>
+	</LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:background="@drawable/taxi_locatebg" android:layout_gravity="center_vertical"
+               android:id="@+id/division02"/>
+    <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:background="@drawable/taxi_map_overlay_dial_button" android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp" android:id="@+id/dial_bt"
+            android:layout_marginRight="5dp"/>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true" android:background="@drawable/footbg02">
+    <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+           android:background="@drawable/passenger_footer_menu_before"
+           android:id="@+id/pre"/>  
+    <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+           android:layout_alignParentRight="true" android:layout_centerVertical="true"
+           android:background="@drawable/passenger_footer_menu_next"
+           android:id="@+id/next"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+           android:layout_centerVertical="true" android:layout_toLeftOf="@id/next"
+           android:layout_toRightOf="@id/pre" android:layout_centerHorizontal="true"> 
+           <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:text="2012-03-06 星期四" android:textColor="#ffffff" 
+                   android:textSize="18sp" android:layout_centerHorizontal="true"
+                   android:id="@+id/date"/> 
+           <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:text="广州 -珠海" android:textColor="#ffffff" 
+                   android:textSize="18sp" android:layout_centerHorizontal="true"
+                   android:layout_marginTop="2dp" android:layout_below="@id/date"/>
+    </RelativeLayout>               
+</RelativeLayout>

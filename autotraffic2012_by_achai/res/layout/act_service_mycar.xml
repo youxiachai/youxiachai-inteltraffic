@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/layout_main"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:background="#EEEEEE" >
+     <LinearLayout android:id="@+id/main_layout"
+          android:layout_width="fill_parent" android:layout_height="wrap_content"
+          android:orientation="vertical" >
+          <include layout="@layout/header" ></include>
+          <ScrollView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"  android:layout_marginBottom="50dp" >
+               <LinearLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:orientation="vertical" >
+                    <RelativeLayout  android:id="@+id/brand"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                         android:layout_marginTop="15dp" android:background="@drawable/up_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/icon_08" android:layout_centerVertical="true"
+                              android:id="@+id/car_brand_img"/>
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/car_brand_img"
+                              android:layout_marginLeft="8dp" android:text="品牌"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_centerVertical="true"
+                              android:background="@drawable/arrow01" 
+                              android:id="@+id/arrow"/>
+                         <TextView android:layout_width="wrap_content" android:id="@+id/car_brand"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow"
+                              android:layout_marginRight="10dp" android:text="别克"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/model"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                         android:background="@drawable/down_select">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/icon_09" android:layout_centerVertical="true"
+                              android:id="@+id/car_model_img"/>
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/car_model_img"
+                              android:layout_marginLeft="8dp" android:text="型号"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01" 
+                              android:id="@+id/arrow01" android:layout_centerVertical="true"/>
+                         <TextView android:layout_width="wrap_content" android:id="@+id/car_model"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow01"
+                              android:layout_marginRight="10dp" android:text="豪华版WV"
+                              android:textColor="#000000" android:textSize="18dp"
+                              android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    
+                    <RelativeLayout android:id="@+id/city"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                         android:layout_marginTop="15dp" android:background="@drawable/up_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/icon_10" android:layout_centerVertical="true"
+                              android:id="@+id/city_img"/>
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/city_img"
+                              android:layout_marginLeft="8dp" android:text="城市"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_centerVertical="true"
+                              android:background="@drawable/arrow01" 
+                              android:id="@+id/arrow02"/>
+                         <TextView android:layout_width="wrap_content" android:id="@+id/car_city"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow02"
+                              android:layout_marginRight="10dp" android:text="广州"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/station"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                         android:background="@drawable/center_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/icon_11" android:layout_centerVertical="true"
+                              android:id="@+id/station_img"/>
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/station_img"
+                              android:layout_marginLeft="8dp" android:text="站点"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_centerVertical="true"
+                              android:background="@drawable/arrow01"
+                              android:id="@+id/arrow03"/>
+                         <TextView android:layout_width="wrap_content" android:id="@+id/car_station"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow03"
+                              android:layout_marginRight="10dp" android:text="鼎力汽车美容店"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/address"
+                              android:layout_width="fill_parent" android:layout_height="wrap_content"
+                              android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                              android:background="@drawable/center_select" android:gravity="center_vertical" >
+                              <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                   android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                                   android:background="@drawable/icon_12" android:layout_centerVertical="true"
+                                   android:id="@+id/address_img"/>
+                              <TextView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" android:layout_toRightOf="@id/address_img"
+                                   android:layout_marginLeft="8dp" android:text="地址"
+                                   android:textColor="#000000" android:textSize="18dp" 
+                                   android:layout_centerVertical="true"/>
+                              <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                                   android:layout_marginRight="10dp" android:layout_centerVertical="true"
+                                   android:background="@drawable/arrow01"
+                                   android:id="@+id/arrow04"/>
+                              <TextView android:layout_width="wrap_content" android:id="@+id/car_address"
+                                   android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow04"
+                                   android:layout_marginRight="10dp" android:text="广州白云大道中"
+                                   android:textColor="#000000" android:textSize="18dp" 
+                                   android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/aboutIcar"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginBottom="10dp" android:layout_marginLeft="10dp"
+                         android:layout_marginRight="10dp" android:background="@drawable/down_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/icon_13" android:layout_centerVertical="true"
+                              android:id="@+id/tel_img"/>     
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/tel_img"
+                              android:layout_marginLeft="8dp" android:text="电话"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_centerVertical="true"
+                              android:background="@drawable/arrow01" 
+                              android:id="@+id/arrow05"/>
+                         <TextView android:layout_width="wrap_content" android:id="@+id/car_address"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow05"
+                              android:layout_marginRight="10dp" android:text="158124755555"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+               </LinearLayout>
+          </ScrollView>
+     </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/list_item_layout" android:layout_width="fill_parent"
+          android:layout_height="wrap_content" android:background="@drawable/horm_list_effect">
+          <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true" android:id="@+id/left_logo"
+                     android:layout_marginLeft="8dp" android:layout_marginTop="10dp"/>
+          <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:layout_marginLeft="8dp" android:layout_marginRight="10dp"
+                          android:layout_toRightOf="@id/left_logo" android:gravity="center_vertical"
+                          android:layout_alignTop="@id/left_logo"> 
+                  <TextView android:id="@+id/business_name" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:text="" 
+                          android:textColor="@color/black" android:textSize="16sp"
+                          android:layout_alignParentLeft="true"/>
+                  <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_alignParentRight="true" android:layout_alignTop="@id/business_name"
+                          android:gravity="center_vertical"> 
+                       <TextView android:id="@+id/date_time" android:layout_width="wrap_content"
+                               android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                               android:text="09-11 22:30"  android:textColor="#FEBF53" 
+                               android:textSize="12sp" android:layout_centerVertical="true"/>
+                       <ImageView android:id="@+id/time_pic" android:layout_width="wrap_content"
+                               android:layout_height="wrap_content" android:layout_toLeftOf="@id/date_time"
+                               android:layout_alignTop="@id/date_time" android:background="@drawable/pic"
+                               android:layout_centerVertical="true" android:layout_marginRight="5dp"/> 
+                  </RelativeLayout>                          
+                  <TextView android:id="@+id/main_content" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_below="@id/business_name"
+                          android:layout_alignLeft="@id/business_name" android:textColor="#797979"
+                          android:text="" android:textSize="15sp" android:layout_marginRight="8dp"
+                          android:lineSpacingExtra="5sp"/>
+                  <ImageView android:id="@+id/content_pic" android:layout_width="100px"
+                          android:layout_height="150px" android:layout_below="@id/main_content"
+                          android:layout_alignLeft="@id/main_content" android:visibility="gone"/>   
+                  <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:orientation="horizontal" android:layout_alignParentLeft="true" 
+                         android:layout_below="@id/content_pic" android:layout_marginBottom="5dp"
+                         android:visibility="gone" android:id="@+id/kehuduan">
+                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                   android:text="来自：iphone客户端"
+                                   android:textSize="12dp" android:textColor="#8E9398"/> 
+                  </LinearLayout>        
+                  <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_alignParentRight="true" android:layout_below="@id/content_pic"
+                          android:layout_marginBottom="5dp">                  
+                       <TextView android:id="@+id/comment_times" android:layout_width="wrap_content"
+                               android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                               android:text="611" android:textSize="12sp"
+                               android:textColor="#CFD8E7" android:layout_centerVertical="true"/>
+                       <Button android:id="@+id/comment_bt" android:layout_width="wrap_content"
+                               android:layout_height="12dp" android:layout_toLeftOf="@id/comment_times"
+                               android:background="@drawable/icon_2" android:layout_marginRight="2dp"
+                               android:layout_centerVertical="true"/> 
+                       <TextView android:id="@+id/transmit_times" android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"  android:text="553" 
+                               android:textSize="12sp" android:layout_below="@id/content_pic"
+                               android:textColor="#CFD8E7" android:layout_toLeftOf="@id/comment_bt"
+                               android:layout_marginRight="10dp" android:layout_centerVertical="true"/>               
+                       <Button android:id="@+id/transmit_bt" android:layout_width="wrap_content"
+                               android:layout_height="12dp" android:layout_toLeftOf="@id/transmit_times"
+                               android:background="@drawable/icon_1" android:layout_marginRight="2dp"
+                               android:layout_centerVertical="true"/> 
+                 </RelativeLayout>             
+          </RelativeLayout>           
+</RelativeLayout>

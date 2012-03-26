@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#EEEEEE" >
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:orientation="vertical" >
+        <include layout="@layout/bus_result_header" ></include>
+        <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" >
+         <LinearLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:orientation="vertical" >       
+             <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                     android:layout_marginTop="12dp" android:background="@drawable/up_bg02a">
+                     <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true" android:layout_marginLeft="10dp"
+                             android:layout_centerVertical="true" android:background="@drawable/avatar"
+                             android:id="@+id/logo" />
+                     <!-- 登陆前 -->
+                     <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:layout_centerVertical="true" android:layout_toRightOf="@id/logo"
+                             android:layout_marginLeft="25dp" android:visibility="gone"
+                             android:id="@+id/login_layout">
+                             <TextView android:id="@+id/unLogin" android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+                                    android:text="用户未登陆" android:textColor="#323232"
+                                    android:textSize="18sp"/>
+                             <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="登陆" android:textColor="#ffffff"
+                                    android:textSize="16sp" android:layout_below="@id/unLogin"
+                                    android:layout_alignLeft="@id/unLogin" android:background="@drawable/my_login_button"
+                                    android:layout_marginTop="15dp" android:id="@+id/login_bt"
+                                    android:gravity="center"/>
+                             <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="注册" android:textColor="#ffffff"
+                                    android:textSize="16sp" android:background="@drawable/my_login_button"
+                                    android:layout_toRightOf="@id/login_bt" android:layout_alignBottom="@id/login_bt"
+                                    android:layout_marginLeft="20dp" android:gravity="center"
+                                    android:id="@+id/register"/>
+                     </RelativeLayout>
+                     <!-- 登陆后 -->
+                     <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:layout_centerVertical="true" android:layout_toRightOf="@id/logo"
+                             android:layout_marginLeft="25dp" android:visibility="gone"
+                             android:id="@+id/login_layout1">
+                             <TextView android:id="@+id/userName" android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+                                    android:text="vicky_Z" android:textColor="#000000"
+                                    android:textSize="16sp"/>
+                            <TextView android:id="@+id/mobile" android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+                                    android:text="139***5109" android:textColor="#757575"
+                                    android:textSize="16sp" android:layout_below="@id/userName"
+                                    android:layout_marginTop="18dp"/>
+                             <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:textSize="16sp" android:background="@drawable/btn_loginout_a"                            
+                                    android:layout_alignParentRight="true" android:layout_marginRight="5dp"
+                                    android:layout_alignBottom="@id/mobile"
+                                    android:id="@+id/logout"/>
+                     </RelativeLayout>
+             </RelativeLayout>
+             <RelativeLayout android:id="@+id/my_message"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                         android:layout_marginTop="15dp" android:background="@drawable/up_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/icon_mes" android:layout_centerVertical="true"
+                              android:id="@+id/message_img"/>
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/message_img"
+                              android:layout_marginLeft="8dp" android:text="我的消息"
+                              android:textColor="#525252" android:textSize="17dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01" android:layout_centerVertical="true"
+                              android:id="@+id/arrow02"/>
+                         <TextView android:layout_width="wrap_content" android:id="@+id/car_city"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow02"
+                              android:layout_marginRight="10dp" android:text="10条"
+                              android:textColor="#2596C0" android:textSize="16dp" 
+                              android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/my_order"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                         android:background="@drawable/center_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/icon_order" android:layout_centerVertical="true"
+                              android:id="@+id/order_img"/>
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/order_img"
+                              android:layout_marginLeft="8dp" android:text="我的订单"
+                              android:textColor="#525252" android:textSize="17dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01"
+                              android:id="@+id/arrow03" android:layout_centerVertical="true"/>
+                         <TextView android:layout_width="wrap_content" android:id="@+id/car_station"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow03"
+                              android:layout_marginRight="10dp" android:text="暂无"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                    </RelativeLayout>                   
+                    <RelativeLayout android:id="@+id/my_collection"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginBottom="10dp" android:layout_marginLeft="10dp"
+                         android:layout_marginRight="10dp" android:background="@drawable/down_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/my_icon_fav2" android:layout_centerVertical="true"
+                              android:id="@+id/collection_img"/>     
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/collection_img"
+                              android:layout_marginLeft="8dp" android:text="我的收藏"
+                              android:textColor="#525252" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01" 
+                              android:id="@+id/arrow05" android:layout_centerVertical="true"/>
+                         <TextView android:layout_width="wrap_content" android:id="@+id/car_address"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow05"
+                              android:layout_marginRight="10dp" android:text="暂无"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+              </RelativeLayout>
+              <RelativeLayout android:id="@+id/switch_city"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                         android:layout_marginTop="5dp" android:background="@drawable/up_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/my_icon_switch" android:layout_centerVertical="true"
+                              android:id="@+id/message_img"/>
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/message_img"
+                              android:layout_marginLeft="8dp" android:text="切换城市"
+                              android:textColor="#525252" android:textSize="17dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01" android:layout_centerVertical="true"
+                              android:id="@+id/arrow02"/>
+                         <TextView android:layout_width="wrap_content" android:id="@+id/cur_city"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow02"
+                              android:layout_marginRight="10dp" android:text="广州"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                    </RelativeLayout>                 
+                    <RelativeLayout android:id="@+id/set_index"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginBottom="10dp" android:layout_marginLeft="10dp"
+                         android:layout_marginRight="10dp" android:background="@drawable/down_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/icon_home" android:layout_centerVertical="true"
+                              android:id="@+id/collection_img"/>     
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/collection_img"
+                              android:layout_marginLeft="8dp" android:text="设置首页"
+                              android:textColor="#525252" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01" 
+                              android:id="@+id/arrow05" android:layout_centerVertical="true"/>
+                         <TextView android:layout_width="wrap_content" android:id="@+id/home_name"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow05"
+                              android:layout_marginRight="10dp" android:text="附近"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+              </RelativeLayout>
+              
+              <RelativeLayout android:id="@+id/version_update"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                         android:layout_marginTop="5dp" android:background="@drawable/up_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/icon_version" android:layout_centerVertical="true"
+                              android:id="@+id/version_img"/>
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/version_img"
+                              android:layout_marginLeft="8dp" android:text="版本更新"
+                              android:textColor="#525252" android:textSize="17dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01" android:layout_centerVertical="true"
+                              android:id="@+id/arrow02"/>
+                         <TextView android:layout_width="wrap_content" android:id="@+id/version"
+                              android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow02"
+                              android:layout_marginRight="10dp" android:text="V2.0"
+                              android:textColor="#000000" android:textSize="18dp" 
+                              android:layout_centerVertical="true"/>
+              </RelativeLayout>     
+              <RelativeLayout android:id="@+id/focus_wb"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                         android:background="@drawable/center_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/my_icon_7" android:layout_centerVertical="true"
+                              android:id="@+id/weibo_img"/>
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/weibo_img"
+                              android:layout_marginLeft="8dp" android:text="关注微博"
+                              android:textColor="#525252" android:textSize="17dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01"
+                              android:id="@+id/arrow03" android:layout_centerVertical="true"/>                     
+              </RelativeLayout> 
+               <RelativeLayout android:id="@+id/my_share"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                         android:background="@drawable/center_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/my_icon_6" android:layout_centerVertical="true"
+                              android:id="@+id/share_img"/>
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/share_img"
+                              android:layout_marginLeft="8dp" android:text="分享邀请"
+                              android:textColor="#525252" android:textSize="17dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01"
+                              android:id="@+id/arrow03" android:layout_centerVertical="true"/>                     
+              </RelativeLayout>        
+               <RelativeLayout android:id="@+id/my_valuation"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                         android:background="@drawable/center_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/my_icon_5" android:layout_centerVertical="true"
+                              android:id="@+id/valuation_img"/>
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/valuation_img"
+                              android:layout_marginLeft="8dp" android:text="评价打分"
+                              android:textColor="#525252" android:textSize="17dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01"
+                              android:id="@+id/arrow03" android:layout_centerVertical="true"/>                     
+              </RelativeLayout>                                                                                                                        
+              <RelativeLayout android:id="@+id/my_help"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                         android:background="@drawable/center_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/my_icon_9" android:layout_centerVertical="true"
+                              android:id="@+id/help_img"/>
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/help_img"
+                              android:layout_marginLeft="8dp" android:text="帮助指南"
+                              android:textColor="#525252" android:textSize="17dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01"
+                              android:id="@+id/arrow03" android:layout_centerVertical="true"/>                     
+              </RelativeLayout>          
+               <RelativeLayout android:id="@+id/focus_my"
+                         android:layout_width="fill_parent" android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                         android:layout_marginBottom="10dp" android:background="@drawable/down_select">
+                         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                              android:background="@drawable/my_icon_8" android:layout_centerVertical="true"
+                              android:id="@+id/my_img"/>
+                         <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_toRightOf="@id/my_img"
+                              android:layout_marginLeft="8dp" android:text="关于我们"
+                              android:textColor="#525252" android:textSize="17dp" 
+                              android:layout_centerVertical="true"/>
+                         <ImageView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                              android:layout_marginRight="10dp" android:layout_marginTop="4dp"
+                              android:background="@drawable/arrow01"
+                              android:id="@+id/arrow03" android:layout_centerVertical="true"/>                     
+              </RelativeLayout>                                              
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent" android:layout_height="fill_parent"
+     android:id="@+id/layout_main" android:background="#ffffff">
+<!--      <LinearLayout android:focusable="true" android:layout_width="0px" 
+          android:layout_height="0px" android:focusableInTouchMode="true"/>  -->
+     <LinearLayout android:layout_width="fill_parent"
+          android:layout_marginBottom="45dp"
+          android:layout_height="fill_parent" android:orientation="vertical">
+          <include layout="@layout/busline_result_header" ></include>
+
+          <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:layout_gravity="center" android:id="@+id/no_data_layout"
+                 android:visibility="gone" >
+            <TextView android:id="@+id/no_data"
+                 android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp" android:layout_marginTop="10dp"
+                 android:text="查询不到相关数据!" android:textColor="#000000"
+                 android:textSize="18sp"/> 
+          </RelativeLayout>
+          <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:background="#EEEEEE">
+              <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true" android:layout_marginRight="6dp"
+                   android:layout_centerVertical="true" android:id="@+id/switch_up_down"
+                   android:background="@drawable/bus_switch_button"
+                   android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+               <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                   android:layout_toLeftOf="@id/switch_up_down" android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp">
+                       <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                 android:id="@+id/end_station" android:textColor="#000000"
+                                 android:textSize="16sp" android:layout_marginLeft="10dp"
+                                 android:text="开往 ："/>  
+            <!--            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                 android:id="@+id/price" android:textColor="#000000"
+                                 android:textSize="16sp" android:layout_marginLeft="10dp"
+                                 android:layout_below="@id/end_station" android:layout_marginTop="1dp"
+                                 android:text="票价："/>   -->
+                      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                 android:id="@+id/fresh_time" android:textColor="#000000"
+                                 android:textSize="16sp" android:layout_marginLeft="10dp"
+                                 android:layout_below="@id/end_station" android:layout_marginTop="1dp"
+                                 android:text="刷新时间："/>           
+               </RelativeLayout>    
+        </RelativeLayout> 
+        <ListView android:id="@+id/list_contents" android:layout_width="fill_parent"
+               android:layout_height="wrap_content" android:focusableInTouchMode="true"
+               android:fadingEdge="vertical" android:divider="@drawable/line"
+               android:dividerHeight="0.5dp" android:cacheColorHint="#00000000"
+               android:scrollingCache="false" android:background="#FFFFFF">
+        </ListView>
+     </LinearLayout>
+     <include layout="@layout/bus_footer" ></include>
+</RelativeLayout>

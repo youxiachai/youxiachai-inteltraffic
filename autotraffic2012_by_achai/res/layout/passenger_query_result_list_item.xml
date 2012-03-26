@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/list_item_layout" android:layout_width="fill_parent"
+          android:layout_height="wrap_content" android:background="@drawable/horm_list_effect">
+          <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:layout_alignParentLeft="true" android:layout_marginLeft="10dp"
+                   android:layout_marginTop="5dp" android:id="@+id/layout_01">
+                  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:text="B1234" android:textColor="#F15E0C"
+                           android:textSize="16sp" android:id="@+id/pass_num"
+                           android:layout_centerHorizontal="true"/>
+                  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:text="中巴" android:textColor="#6E6E6E"
+                           android:textSize="16sp" android:id="@+id/pass_type"
+                           android:layout_below="@id/pass_num"/>
+          </RelativeLayout> 
+          <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="5dp" android:id="@+id/layout_02"
+                   android:layout_toRightOf="@id/layout_01">
+                  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:text="广州南站" android:textColor="#6E6E6E"
+                           android:textSize="16sp" android:id="@+id/start_station"/>
+                  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:text="珠海拱北站" android:textColor="#6E6E6E"
+                           android:textSize="16sp" android:id="@+id/end_station"
+                           android:layout_below="@id/start_station" />
+          </RelativeLayout>      
+          <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="5dp" android:id="@+id/layout_03"
+                   android:layout_toRightOf="@id/layout_02">
+                  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:text="10:00" android:textColor="#0384B3"
+                           android:textSize="16sp" android:id="@+id/start_time"
+                           android:layout_centerHorizontal="true"/>
+                  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:text="15:00" android:textColor="#0384B3"
+                           android:textSize="16sp" android:id="@+id/end_time"
+                           android:layout_centerHorizontal="true" android:layout_below="@id/start_time" />
+         </RelativeLayout>   
+         <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="5dp" android:id="@+id/layout_04"
+                   android:layout_toRightOf="@id/layout_03">
+                  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:text="￥155" android:textColor="#F15E0C"
+                           android:textSize="16sp" android:id="@+id/price"
+                           android:layout_centerHorizontal="true"/>
+                  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:text="(6.5折)" android:textColor="#6E6E6E"
+                           android:textSize="16sp" android:id="@+id/peice_01"
+                           android:layout_centerHorizontal="true" android:layout_below="@id/price" />
+         </RelativeLayout>  
+         <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp" android:layout_marginRight="5dp"
+                   android:layout_marginTop="5dp" android:id="@+id/layout_05"
+                   android:layout_toRightOf="@id/layout_04">
+                   <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:text="6" android:textColor="#F15E0C"
+                           android:textSize="16sp" android:id="@+id/ticket"
+                           android:layout_centerHorizontal="true"/>
+         </RelativeLayout>  
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="途径中山，顺德" android:textColor="#A2A2A2"
+                  android:textSize="15sp" android:id="@+id/middle_stations"
+                  android:layout_below="@id/layout_01"
+                  android:layout_alignParentLeft="true" android:layout_marginLeft="10dp"/>        
+</RelativeLayout>

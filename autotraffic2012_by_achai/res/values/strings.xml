@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 发布版本使用 -->
+	<string name="app_versionCode">18</string><!-- 给设备程序识别版本，更新过多少次 -->
+  	<string name="app_version">1.18.beta(Build12032310)</string><!-- 给用户看的，版本号 -->
+  	<string name="app_compare_version">1.18</string><!-- 跟服务器端比较的版本号 -->
+  	<!-- <string name="app_language">Java</string>开发语言 -->
+  	<!-- <string name="app_system">Android</string>手机操作系统 -->
+  	<!--<string name="app_screen">240x320</string> 手机屏幕大小 -->
+  	<!--<string name="app_screen">320x480</string> 手机屏幕大小 -->
+  	<!-- <string name="app_screen">480x800</string>手机屏幕大小 -->
+  	<!--<string name="app_screen">480x854</string> 手机屏幕大小 -->
+  	
+    <string name="app_name">智能交通</string>
+	<string name="copy_right">Copyright © 2012</string>
+	<string name="copy_name">中国移动通信集团公司</string>
+	<string name="maps_api_key">c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91ac9b40935754d9a9ad5c23cbc0b9826685fcbce2c</string>
+	<string name="maps_api_key_wego">5f9162d0f95837b6c347cb053d3e1543d0903636001a6e89622b7c0e52db10940dd3c11d23ce103c</string>
+	<string name="maps_api_key_gz">0979921efbd2bb6f5454fecabb3b3862455078cbd02560dd9d7db4467627745bd6701e809ffca6e3</string>
+	<string name="app_id">4e6ecc50</string>
+
+	<string name="no_data">查询不到相关数据！</string>
+	<string name="version_update_content">版本历史：
+\n2012.3.23  V1.18.beta
+\n1、定位优化。
+\n2、路况弹出区域选择框比较慢并改进UI。 
+\n3、一些bug修改和优化，一些细节的改动。
+\n
+\n2012.3.20  V1.13.beta-V1.17.beta
+\n1、路线和换乘查询支持选择我的位置和地图上的点。
+\n2、附近里把交通分类挪到最前，支持附近的公交站点搜索，解决附近的长途汽车站搜索问题。
+\n3、服务应用对应地市，图标作排序，跑通数据的优先放在前面，没数据或者Demo提示“本应用即将开通”。
+\n4、公交线路的票价显示“0元”改为“未知” 。
+\n5、广东高速公路里模糊查询的功能增加。
+\n6、解决在540x960分辨率下，附近里的语音搜索按钮点击后会自动退出的问题。
+\n7、解决在540x960分辨率下，附近页面最下面多了一块空白区域的问题。
+\n8、我的：实现设置首页、版本更新。
+\n9、其它一些BUG修复。
+\n
+\n2012.3.15  V1.12.beta
+\n1、路线-驾车：添加历史查询
+\n2、定位功能完善
+\n3、定位出问题导致无法进入首页
+\n4、增加帮助指南说明
+\n5、公交线路，公交站点，公交换乘查询和结果页面细节的调整
+\n6、爱卡卡中首页调整文字介绍</string>
+</resources>

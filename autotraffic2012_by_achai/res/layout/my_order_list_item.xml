@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:background="@drawable/horm_list_effect" >
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_centerVertical="true" android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp" android:layout_marginBottom="15dp"
+            android:background="@drawable/pic_sbg" android:id="@+id/logo_layout"
+            android:layout_alignParentLeft="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" android:background="@drawable/pic_s"
+                    android:id="@+id/logo_img"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_centerVertical="true" android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp" android:layout_marginBottom="10dp"
+          android:layout_toRightOf="@id/logo_layout"> 
+          <TextView android:id="@+id/title" android:layout_width="wrap_content" 
+               android:layout_height="wrap_content" android:text="0元抽奖，巴厘岛6日浪漫..."
+               android:textColor="#3C3C3C" android:textSize="16sp"/> 
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:layout_below="@id/title" android:textColor="#696969"
+               android:textSize="14sp" android:text="数量：" 
+               android:layout_marginTop="5dp" android:id="@+id/amount"/>
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/amount" android:textColor="#0C9CD1"
+               android:textSize="14sp" android:layout_alignBottom="@id/amount"
+               android:text="1" android:id="@+id/amount_value"/>
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:layout_below="@id/amount" android:textColor="#696969"
+               android:textSize="14sp" android:text="总价：" 
+               android:id="@+id/totalize"/>
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/totalize" android:textColor="#0C9CD1"
+               android:textSize="14sp" android:layout_alignBottom="@id/totalize"
+               android:text="0元" android:id="@+id/totalize_value"/>
+          <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:layout_alignParentRight="true" android:layout_alignBottom="@id/totalize_value"
+               android:layout_marginRight="5dp" android:background="@drawable/my_login_button"
+               android:text="已付款" android:textColor="#FFFFFF"
+               android:id="@+id/pay_Bt"/>
+    </RelativeLayout>     
+</RelativeLayout>

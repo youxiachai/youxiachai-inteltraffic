@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/headerLayout" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:background="@drawable/headtitbg">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+         android:layout_alignParentRight="true" android:layout_centerVertical="true"
+         android:layout_marginRight="10dp" android:background="@drawable/bus_button"
+         android:id="@+id/right_layout"  android:gravity="center_horizontal">
+         <ImageButton android:id="@+id/sort_bt" android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" android:layout_centerVertical="true"
+                 android:src="@drawable/sift_button" android:layout_alignParentLeft="true"
+                 android:background="@null" android:layout_marginLeft="10dp"/>
+         <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:layout_centerVertical="true" android:layout_toRightOf="@id/sort_bt"
+                 android:id="@+id/sift_bt" android:src="@drawable/sort_button"
+                 android:background="@drawable/graybg4" android:layout_marginLeft="8dp"/>
+    </RelativeLayout>
+    
+     <RelativeLayout android:id="@+id/left_layout"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp" android:gravity="center_horizontal"
+        android:background="@drawable/bus_button">
+        <ImageView android:id="@+id/left_img"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_centerVertical="true" android:background="@drawable/header_back" />
+        <TextView android:id="@+id/left_text"
+            android:layout_width="wrap_content"  android:layout_height="wrap_content"
+            android:layout_centerVertical="true" android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/left_img" android:text="返回"
+            android:textColor="#FFFFFF"  android:textSize="16sp" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+         android:id="@+id/switch_city_layout">        
+         <TextView android:id="@+id/middle_title" android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" android:text="商品列表" 
+                 android:layout_centerVertical="true"
+                 android:textSize="18sp" android:textColor="#ffffff"/>
+         <ImageView android:id="@+id/more_city" android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" android:layout_centerVertical="true"
+                 android:layout_marginLeft="5dp" android:background="@drawable/san"
+                 android:layout_toRightOf="@id/middle_title"
+                 android:paddingTop="5dp" android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

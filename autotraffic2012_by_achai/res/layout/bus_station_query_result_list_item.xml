@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/list_item_layout" android:layout_width="fill_parent"
+          android:layout_height="wrap_content" android:background="@drawable/horm_list_effect">
+          <ImageView android:id="@+id/arrow" android:layout_width="wrap_content" 
+                     android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                     android:background="@drawable/arrow01" android:layout_marginRight="10dp"
+                     android:layout_marginTop="15dp" android:layout_marginBottom="15dp"
+                     android:layout_centerVertical="true"/>          
+          <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+                          android:layout_marginTop="15dp" android:layout_marginBottom="15dp"
+                          android:layout_marginLeft="15dp" android:layout_marginRight="15dp"> 
+                  <TextView android:id="@+id/bus_name" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:text="3路" 
+                          android:textColor="#3A93C7" android:textSize="18sp"
+                          android:textStyle="bold"/>               
+                  <TextView android:id="@+id/start_station" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_below="@id/bus_name"
+                          android:layout_alignLeft="@id/bus_name" android:textColor="#000000"
+                          android:text="" android:textSize="17sp" android:paddingTop="1dp"/> 
+                  <TextView android:id="@+id/end_station" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_below="@id/start_station"
+                          android:layout_alignLeft="@id/start_station" android:textColor="#000000"
+                          android:text="" android:textSize="17sp" android:paddingTop="1dp"/>   
+                  <TextView android:id="@+id/brief" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_below="@id/end_station"
+                          android:layout_alignLeft="@id/end_station" android:textColor="#000000"
+                          android:text="" android:textSize="17sp" android:paddingTop="1dp"/>                                    
+          </RelativeLayout>                                        
+</RelativeLayout>

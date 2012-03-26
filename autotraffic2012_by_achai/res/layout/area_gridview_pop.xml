@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+    <GridView android:id="@+id/gridview" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:numColumns="3"
+		android:paddingLeft="0dp" android:layout_centerVertical="true"
+		android:verticalSpacing="5dip" android:horizontalSpacing="5dip"
+		android:stretchMode="columnWidth" android:gravity="center"
+		android:background="@drawable/bg_popup"
+        android:listSelector="@drawable/goout_menu_button"/>
+</RelativeLayout>
+

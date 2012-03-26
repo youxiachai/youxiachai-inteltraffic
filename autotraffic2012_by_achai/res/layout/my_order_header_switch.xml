@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" 
+     android:layout_height="wrap_content"  android:background="@drawable/center01bg"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+     <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+          <ImageButton android:layout_width="wrap_content"
+               android:layout_height="wrap_content" android:id="@+id/order_pre_bt"
+               android:background="@drawable/order_pre_button"/>
+          <ImageButton android:layout_width="wrap_content"
+               android:layout_height="wrap_content" android:id="@+id/order_last_bt"
+               android:layout_toRightOf="@id/order_pre_bt" 
+               android:background="@drawable/order_last_button"/>
+     </RelativeLayout>
+</RelativeLayout>

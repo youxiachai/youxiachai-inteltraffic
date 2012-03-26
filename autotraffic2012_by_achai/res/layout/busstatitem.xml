@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/horm_list_effect" >
+     <RelativeLayout android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp">
+          <ImageView
+               android:id="@+id/imageView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginLeft="45dp"
+               android:src="@drawable/busstat_p" />
+          <TextView
+               android:id="@+id/textViewStationName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_marginLeft="83dp"
+               android:layout_marginTop="0dp"
+               android:textColor="#000000"
+               android:textSize="17sp"
+               android:text="华润万佳"
+               android:textAppearance="?android:attr/textAppearanceLarge" />
+          <RelativeLayout
+               android:id="@+id/instationtime_"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="82dp"
+               android:layout_marginTop="0dp"
+               android:background="@drawable/outbg05" >
+               <TextView
+                    android:id="@+id/station_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+          </RelativeLayout>
+          <RelativeLayout
+               android:id="@+id/instationtime_01"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/instationtime_"
+               android:layout_marginLeft="82dp"
+               android:background="@drawable/outbg06" >
+               <TextView
+                    android:id="@+id/inStationTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#B2B2B2"
+                    android:textSize="13sp"/>
+               <TextView android:id="@+id/last_time"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_toRightOf="@id/inStationTime"
+                   android:layout_marginLeft="15dp"
+                   android:textColor="#359CBF"
+                   android:textSize="13sp"/>  
+          </RelativeLayout>
+          <ImageView
+               android:id="@+id/imageViewBusLeaveStation"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="13dp"
+               android:src="@drawable/icon_bus"
+               android:layout_alignBottom="@+id/textViewLeaveStationCount" />
+          <ImageView
+               android:id="@+id/imageViewBusInStation"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:layout_marginLeft="39.5dp"
+               android:src="@drawable/icon_busin" />
+     </RelativeLayout>
+</RelativeLayout>
